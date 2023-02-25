@@ -1,6 +1,7 @@
 source ~/.cache/wal/colors-tty.sh
 source ~/.zfunc
 
+[[ "$TERM" == "xterm-kitty" ]] && pfetch
 PROMPT="%B[%m %3~]%b "
 
 [ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
