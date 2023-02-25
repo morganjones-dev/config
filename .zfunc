@@ -1,0 +1,5 @@
+function setwal() {
+  (wal -n -i "$@" &)
+  pkill swaybg
+  (swaybg -i "$@" &> /dev/null &)
+}
