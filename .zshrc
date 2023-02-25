@@ -1,6 +1,7 @@
 source ~/.cache/wal/colors-tty.sh
 source ~/.zfunc
 
+[[ "$(tty)" == "/dev/tty1" ]] && start-hyprland
 [[ "$TERM" == "xterm-kitty" ]] && pfetch
 PROMPT="%B[%m %3~]%b "
 
