@@ -1,0 +1,38 @@
+@import "~/.cache/wal/colours-rofi"
+
+* {
+  background-color: Transparent;
+  text-color: @foreground;
+  lines: 5;
+  highlight: bold;
+}
+
+window {
+  background-color: @background75;
+  width: 640px;
+  border-radius: 5px;
+}
+
+prompt {
+  padding: 10px 20px;
+  font: "Manrope 20";
+}
+
+entry {
+  padding: 15px 0 0 0;
+  font: "Manrope 15";
+}
+
+element selected {
+  background-color: @color3;
+}
+
+element-text {
+  font: "Manrope 12";
+  padding: 20px 0;
+}
+
+element-icon {
+  padding: 16px;
+  size: 32px;
+}
