@@ -1,0 +1,9 @@
+hash -d big="/mnt/big"
+hash -d data="/mnt/data"
+
+alias c="clear"
+
+alias gi="git init"
+alias gar="git add remote"
+alias ga="git add"
+alias gc="git commit"
