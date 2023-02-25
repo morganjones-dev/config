@@ -1,4 +1,7 @@
 function setwal() {
+  wall="$1"
+  [[ -z "$wall" ]] && echo "Please provide a wallpaper" && return 0
+
   (wal -n -i "$@" &)
   pkill swaybg
   (swaybg -i "$@" &> /dev/null &)
