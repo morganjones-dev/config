@@ -17,3 +17,6 @@ file="$NVM_DIR/install-nvm-exec" && [[ -f "$file" ]] && source "$file"
 # Autostart
 [[ "$TTY" == "/dev/tty1" ]] && start-hyprland
 [[ "$TERM" == "xterm-kitty" ]] && pfetch
+
+# PATH
+path+=("$HOME/.android/sdk/platform-tools/")
