@@ -1,7 +1,6 @@
 PROMPT="%B[%m %3~]%b "
 
-export NVM_HOME="$HOME/.nvm"
-export NVM_DIR="/usr/share/nvm"
+export NVM_DIR="$HOME/.nvm"
 export DOTS_DIR="$HOME/.dots"
 [[ ! -d "$DOTS_DIR" ]] && echo "DOTS_DIR \"$DOTS_DIR\" does not exist."
 
@@ -10,9 +9,8 @@ file="$HOME/.cachhe/wal/colours-tty.sh" && [[ -f "$file" ]] && source "$file"
 file="$DOTS_DIR/.zfunc" && [[ -f "$file" ]] && source "$file"
 file="$DOTS_DIR/.zaliases" && [[ -f "$file" ]] && source "$file"
 
-file="$NVM_DIR/nvm.sh" && [[ -f "$file" ]] && source "$file"
-file="$NVM_DIR/bash_completion" && [[ -f "$file" ]] && source "$file"
-file="$NVM_DIR/install-nvm-exec" && [[ -f "$file" ]] && source "$file"
+# Initialize NVM
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # Autostart
 [[ "$TTY" == "/dev/tty1" ]] && start-hyprland
